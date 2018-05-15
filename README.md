@@ -1,6 +1,6 @@
 # ReactReduxMiddleware
 
-This project is to understand better react, redux and now middleware
+This project is to understand better react, redux and now middlewares
 
 ### Getting Started
 
