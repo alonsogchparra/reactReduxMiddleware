@@ -8,13 +8,13 @@ class UserList extends Component {
   componentWillMount() {
     this.props.fetchUsers();
   }
-  
+
   renderUsers(user) {
     return (
       <div className="card card-block" key={user.id}>
         <h4 className="card-title">{user.name}</h4>
         <p className="card-text">{user.company.name}</p>
-        <a className="btn btn-primary" href={user.website}>Websiite</a>
+        <a className="btn btn-primary" href={user.website}>Website</a>
       </div>
     )
   }
@@ -22,7 +22,7 @@ class UserList extends Component {
   render() {
     return (
       <div className="user-list">
-        {this.props.user.map(this.renderUsers)}
+        {this.props.users.map(this.renderUsers)}
       </div>
     );
   }
